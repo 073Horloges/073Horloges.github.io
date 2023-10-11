@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
+* {
+  box-sizing: border-box;
 }
 
 body.homepage {
@@ -17,10 +15,10 @@ body.homepage {
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Patek.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(foto/Patek.jpg);
   background-size: cover;
   background-position: center;
-  font-family: 'Solway', serif;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 .navbar {
@@ -30,7 +28,7 @@ body.homepage {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Solway', serif;
+  font-family: 'Fauna One', serif;
 }
 
 .logo {
@@ -49,7 +47,6 @@ body.homepage {
 .navbar ul li a {
   text-decoration: none;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .navbar ul li::after {
@@ -67,6 +64,8 @@ body.homepage {
   width: 100%;
 }
 
+
+
 .content {
   width: 100%;
   position: absolute;
@@ -81,13 +80,13 @@ body.homepage {
   margin-top: 80px;
 }
 
-.contentp {
+.content p {
   margin: 20px auto;
   font-weight: 100;
   line-height: 25px;
 }
 
-button.homepage {
+button.activate {
   width: 200px;
   padding: 15px 0;
   text-align: center;
@@ -103,25 +102,15 @@ button.homepage {
   font-family: Solway;
 }
 
-span.homepage {
-  background: #009688;
-  height: 100%;
-  width: 0;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.5s;
-}
+
 
 button:hover span {
   width: 100%;
 }
 
-button:hover {
+/*button:hover {
   border: none;
-}
+}*/
 
 button a {
   color: white;
